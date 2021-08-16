@@ -1,14 +1,16 @@
 # Webaverse Codespace
- 
+Run your own Webaverse on Codespaces
 
 ## Quick Start
-> Look below at the terminal and see postCreateCommand... running with ./init.sh. 
 
-This may take a bit, afterwards you can press "F5" to run your own Webaverse.
-
-
+Open a terminal and do the following:
 ```sh
-# for our terminal friends 
+# You will answer some cert questions
+./init.sh
+
+# Then you can either F5 to launch via debugging or
 npm start
 ```
+
+In the future you only need to `npm start` or [F5]!
 
