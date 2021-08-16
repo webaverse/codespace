@@ -1,8 +1,5 @@
 #!/bin/sh
 
-echo "Installing App"
-npm install 
-
 echo "Cert Time"
 rm -rf certs
 mkdir certs

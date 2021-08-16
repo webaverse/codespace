@@ -3,7 +3,8 @@ Run your own Webaverse on Codespaces
 
 ## Quick Start
 
-Open a terminal and do the following:
+ - [ ] Open a terminal and do the following:
+ 
 ```sh
 # You will answer some cert questions
 ./init.sh
@@ -12,5 +13,7 @@ Open a terminal and do the following:
 npm start
 ```
 
-In the future you only need to `npm start` or [F5]!
+ -  [ ] In the bottom right corner a notification will prompt you with a URL to your Webaverse.
+
+ -  [ ] In the future you only need to `npm start` or [F5]!
 
