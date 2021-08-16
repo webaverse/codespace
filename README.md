@@ -3,5 +3,6 @@ Run your own Webaverse on Codespaces
 
 ## Quick Start
 
- - [ ] Either F5 to launch via debugging or `npm start`
+ - [ ] Wait for postCreateCommand... to finish below
+ - [ ] Either F5 to launch or `npm start` in a terminal
  - [ ] In the bottom right corner a notification will prompt you with a URL to your Webaverse.
