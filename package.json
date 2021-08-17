@@ -4,7 +4,9 @@
   "description": "The Webaverse Codespace",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/webaverse-app/index"
+    "start:dialog": "node ./node_modules/dialog/index",
+    "start:webaverse": "node ./node_modules/webaverse-app/index",
+    "start": "run-p start:webaverse start:dialog"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/webaverse/codespace#readme",
   "dependencies": {
+    "dialog": "github:mozilla/dialog",
+    "npm-run-all": "^4.1.5",
     "webaverse-app": "github:webaverse/app"
   }
 }
