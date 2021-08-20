@@ -1,5 +1,5 @@
 # Webaverse Codespace
-Run your own Webaverse on Codespaces with ease.
+Run your own Webaverse on Codespaces
 
 ## Guided Start
  - [ ] On GitHub, click `Code` then `New Codespace` to create a new codespace.
