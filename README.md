@@ -8,7 +8,7 @@ Run your own Webaverse on Codespaces with ease.
  - [ ] Wait for the Codespace and postCreateCommand... to finish setting up. 
 ![Wait for it](./image/codespace%20wait.png)
 
- - [ ] Either F5 or `npm start` in a terminal launches your stack.
+ - [ ] Either press `F5` or type `npm start` in a terminal to launch your stack.
 
  - [ ] In the bottom right corner a notification will prompt you with link to your Webaverse.
 ![App Link](./image/app%20link.png)
