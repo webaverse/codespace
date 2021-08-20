@@ -20,5 +20,5 @@ Run your own Webaverse on Codespaces with ease.
 ## FAQ
  1. How do I make it multiplayer?
 
-Use `/?r=room-0` in your URL or wander to the multiplayer section near the entrance. Make sure you make your ports `Public` to play with others.
+Use `/?r=room-0` in your URL or wander to the multiplayer section near the entrance. Make sure your ports `Public` to play with others.
 
