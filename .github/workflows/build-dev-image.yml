@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@feature-workflow-image
+        uses: actions/checkout@master
         
       - name: Install
         run: npm install
