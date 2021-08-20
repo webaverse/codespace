@@ -1,5 +1,4 @@
 #!/bin/sh
-npm install 
 
 echo "Cert Time"
 rm -rf certs
