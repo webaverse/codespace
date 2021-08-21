@@ -6,7 +6,8 @@
   "scripts": {
     "start:dialog": "node ./node_modules/dialog/index",
     "start:webaverse": "node ./node_modules/webaverse-app/index",
-    "start": "run-p start:webaverse start:dialog"
+    "start": "run-p start:webaverse start:dialog",
+    "test": "true"
   },
   "repository": {
     "type": "git",
