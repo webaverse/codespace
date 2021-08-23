@@ -25,8 +25,8 @@ jobs:
 
       - name: Move node_modules
         run: |
-          mkdir --parents /workspaces/node_modules
-          mv ./node_modules /workspaces/node_modules
+          sudo mkdir --parents /workspaces/node_modules
+          sudo mv ./node_modules /workspaces/node_modules
 
       - name: Build image
         run: docker build . --file .github/Dockerfile --tag $IMAGE_NAME
