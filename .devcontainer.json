@@ -6,10 +6,7 @@
     },
 	"postCreateCommand": "./init.sh",
 	"build": {
-		"dockerfile": ".devcontainer/Dockerfile",
-		"args": {
-			"VARIANT": "16"
-		}
+		"dockerfile": ".devcontainer/Dockerfile"
 	},
 	"extensions": [
 		"dbaeumer.vscode-eslint"
