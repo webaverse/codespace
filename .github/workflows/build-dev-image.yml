@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@master
+        uses: actions/checkout@main
         
       - name: Install
         run: npm install
 
       - name: Log into registry ghcr.io
-        run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
 
       - name: Build image
         run: docker build . --file .github/Dockerfile --tag $IMAGE_NAME
