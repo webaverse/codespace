@@ -21,6 +21,6 @@
   "dependencies": {
     "dialog": "github:webaverse/dialog#master",
     "npm-run-all": "^4.1.5",
-    "webaverse-app": "github:webaverse/app"
+    "webaverse-app": "github:webaverse/app#master"
   }
 }
