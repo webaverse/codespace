@@ -3,7 +3,8 @@ on:
   push:
     branches:
       - feature-workflow-image
-      
+    paths:
+      - '.github/workflows/build-dev-image.yml'
 env: 
   IMAGE_NAME: webaverse-codespace
 
