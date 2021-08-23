@@ -28,25 +28,8 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: Check out out dialog
-        uses: actions/checkout@v2
-        with:
-          repository: octocat/my-private-repo
-          ref: v1.0
-          token: ${{ secrets.GITHUB_TOKEN }}
-          path: ./.github/actions/my-private-repo
-
-      - name: Check out app
-        uses: actions/checkout@v2
-        with:
-          repository: webaverse/app
-          ref: v1.0
-          token: ${{ secrets.GITHUB_TOKEN }}
-          path: ./node_modules/webaverse-app
-
       - name: Install
-        run: |
-          npm install 
+        run: npm install 
 
       - name: Log into registry ghcr.io
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
