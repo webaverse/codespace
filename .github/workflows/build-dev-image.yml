@@ -47,10 +47,9 @@ jobs:
       - name: Install
         run: |
           npm install npm-run-all@^4.1.5
-          cd node_modules/webaverse-app
-          npm install
-          cd ../dialog
-          npm install
+          cd node_modules/webaverse-app; npm install
+          cd node_modules/dialog; npm install
+         
 
       - name: Log into registry ghcr.io
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
