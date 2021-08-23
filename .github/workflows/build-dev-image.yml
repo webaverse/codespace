@@ -47,7 +47,7 @@ jobs:
       - name: Install
         run: |
           cd node_modules/webaverse-app; npm install
-          cd node_modules/dialog; npm install
+          cd ../dialog; npm install
          
 
       - name: Log into registry ghcr.io
