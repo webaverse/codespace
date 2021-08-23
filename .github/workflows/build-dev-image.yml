@@ -32,10 +32,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           path: ./node_modules/webaverse-app
 
-      - name: Install
+      - name: Remove git info from node_modules
         run: |
-          cd node_modules/webaverse-app; npm install; rm -rf .git
-          cd ../dialog; npm install; rm -rf .git
+          cd node_modules/webaverse-app; rm -rf .git
+          cd ../dialog; rm -rf .git
          
       - name: Log into registry ghcr.io
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
