@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Cache node modules
+        id: cache-node
         uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
@@ -29,6 +30,7 @@ jobs:
             ${{ runner.os }}-
             
       - name: Check out dialog
+        if: steps.cache-node.outputs.cache-hit != 'true'
         uses: actions/checkout@v2
         with:
           repository: webaverse/dialog
@@ -37,6 +39,7 @@ jobs:
           path: ./node_modules/dialog
 
       - name: Check out app
+        if: steps.cache-node.outputs.cache-hit != 'true'
         uses: actions/checkout@v2
         with:
           repository: webaverse/app
