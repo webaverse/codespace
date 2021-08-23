@@ -2,6 +2,7 @@
     "containerEnv": {
         "HTTPS_CERT_FULLCHAIN": "/workspaces/codespace/certs/fullchain.pem",
         "HTTPS_CERT_PRIVKEY": "/workspaces/codespace/certs/privkey.pem",
+        "MEDIASOUP_WORKER_BIN": "/workspaces/codespace/mediasoup-worker",
         "DEV": "1"
     },
     "postCreateCommand": "./init.sh"
