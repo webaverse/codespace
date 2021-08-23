@@ -28,7 +28,7 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
             
-      - name: Check out out dialog
+      - name: Check out dialog
         uses: actions/checkout@v2
         with:
           repository: webaverse/dialog
