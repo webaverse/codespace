@@ -27,6 +27,22 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+            
+      - name: Check out out dialog
+        uses: actions/checkout@v2
+        with:
+          repository: webaverse/dialog
+          ref: master
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: ./node_modules/dialog
+
+      - name: Check out app
+        uses: actions/checkout@v2
+        with:
+          repository: webaverse/app
+          ref: master
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: ./node_modules/webaverse-app
 
       - name: Install
         run: npm install 
