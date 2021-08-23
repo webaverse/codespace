@@ -3,7 +3,9 @@ on:
   push:
     branches:
       - feature-workflow-image
-
+    paths:
+      - 'package.json'
+      
 env: 
   IMAGE_NAME: webaverse-codespace
 

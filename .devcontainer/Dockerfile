@@ -1,1 +1,1 @@
-FROM ghcr.io/webaverse/codespace/webaverse-codespace:latest
+FROM ghcr.io/webaverse/webaverse-codespace:feature-workflow-image
