@@ -4,7 +4,7 @@
         "HTTPS_CERT_PRIVKEY": "/workspaces/codespace/certs/privkey.pem",
         "DEV": "1"
     },
-	"postCreateCommand": "./init.sh",
+	"postCreateCommand": "./create.sh",
 	"build": {
 		"dockerfile": ".devcontainer/Dockerfile"
 	},
