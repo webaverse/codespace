@@ -18,15 +18,13 @@ jobs:
         uses: actions/checkout@main
         
       - name: Install
-        run: npm install
+        run: MEDIASOUP_WORKER_BIN=1 npm install
 
       - name: Log into registry ghcr.io
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
 
       - name: Move node_modules
-        run: |
-          sudo mkdir --parents /workspaces/node_modules
-          sudo mv ./node_modules /workspaces/node_modules
+        run: sudo mv ./node_modules /node_modules
 
       - name: Build image
         run: docker build . --file .github/Dockerfile --tag $IMAGE_NAME
